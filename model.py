@@ -2,6 +2,8 @@
 # coding: utf-8
 import pandas as pd
 import pickle
+import streamlit as st
+import base64
 
 #pip install imbalanced-learn
 
@@ -101,10 +103,10 @@ print(classification_report(y_test, y_pred))
 
 
 # Saving model to disk
-#pickle.dump(dt4, open('model.pkl','wb'))
+pickle.dump(dt4, open('model.pkl','wb'))
 
 # Loading model to compare the results
-#model = pickle.load(open('model.pkl','rb'))
+model = pickle.load(open('model.pkl','rb'))
 #print(model.predict([[2, 9, 6]]))
 
 # from sklearn.ensemble import RandomForestClassifier
