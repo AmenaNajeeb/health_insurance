@@ -7,7 +7,7 @@ import pickle
 
 from imblearn.over_sampling import SMOTE
 
-df=pd.read_csv("C:\\Users\\Amena\\Desktop\\corporate_training_excelr\\a_model_deploy\\Insurance_Dataset.csv")
+df=pd.read_csv("Insurance_Dataset.csv")
 
 df.shape
 
